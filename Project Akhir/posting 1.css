@@ -20,10 +20,6 @@ h1 {
     list-style-type: none;
     float: center;
 }
-.menu ul :hover {
-    text-decoration:blink;
-    background: rgb(10 100 20);
-}
 div{
 	border-radius: 10pt;
 }
