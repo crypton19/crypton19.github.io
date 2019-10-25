@@ -1,0 +1,96 @@
+body {
+	font-family: sans-serif;
+    background-image: url(https://cdn.pixabay.com/photo/2018/10/15/07/33/background-3748310_960_720.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    font-style: Britannic Bold;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+}
+.kotak_menu {
+    width: 100%;
+    height: 33px;
+    background: green;
+    text-align: center;
+}
+.menu ul {
+    list-style-type: none;
+    float: center;
+}
+.menu ul :hover {
+    text-decoration:blink;
+    background: rgb(10 100 20);
+}
+label{
+    font-size: 12pt;
+}
+div{
+	border-radius: 10pt;
+}
+li {
+    display: inline;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 60px;
+    border-right: 3px solid rgba(255,255,255,0.125);
+    border-left: 3px solid rgba(255,255,255,0.125);
+    color: #f8f8f8;
+    font-weight: bold;
+}
+.kotak_login {
+    width: 350px;
+    background: rgba(239,255,235,0.5);
+    margin: 50px 150px;
+    padding: 30px 20px;
+}
+.kotak_daftar {
+    width: 350px;
+    background: rgba(239,255,235,0.5);
+    margin: 50px 80px;
+    padding: 30px 20px;
+}
+.judul {
+    text-align: center;
+    text-transform: uppercase;
+}
+.form{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.link{
+    background: rgba(20,20,255,0.5);
+    color: white;
+    font-size: 12pt;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: #232323;
+    text-decoration: none;
+    font-size: 10pt;
+}
+#kiri{
+	width:50%;
+	height:100px;
+	float:left;
+}
+#kanan{
+    width:50%;
+    height:100px;
+    float:right;
+}
+.lupa{
+    font-size: 10pt;
+    margin-top: -20px;
+    color: blue;
+    margin-left: -55px;
+}
