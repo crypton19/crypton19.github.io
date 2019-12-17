@@ -3,7 +3,6 @@
 <head>
   <title>Login SAHABAT TANI</title>
   <link rel="stylesheet" type="text/css" href="Final 1.css">
-  <script type="text/javascript" src="Project Akhir/jsquery-3.4.1.js"></script>
 </head>
 <body>
   <h1>SAHABAT TANI</h1>
@@ -26,7 +25,7 @@
         <label>Username</label>
         <input type="text" name="username" class="form" placeholder="username atau email">
         <label>Password</label>
-        <input type="password" name="password" class="form" placeholder="password"><br>
+        <input type="password" name="form-password" class="form" placeholder="password"><br>
         <input type="checkbox" class="form-checkbox">Lihat Password
       </form>
       <a href="password.html" class="lupa">Lupa Password?</a>
@@ -54,16 +53,16 @@
     </div>
   </div>
 </body>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
-	$(document).ready(function() {
-		var cek = $('.form-checkbox').val(); 
-		$('.form-checkbox').click(function(){
-			if ($(this).is(':checked')) {
-				$('.form-checkbox').attr('type','text');
-			}else{
-				$('.form-checkbox').attr('type','password');
-			}
-		});
-	});
+  $(document).ready(function(){   
+    $('.form-checkbox').click(function(){
+      if($(this).is(':checked')){
+        $('.form-password').attr('type','text');
+      }else{
+        $('.form-password').attr('type','password');
+      }
+    });
+  });
 </script>
 </html>
