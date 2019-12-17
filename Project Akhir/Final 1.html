@@ -21,16 +21,16 @@
   <div id="kiri">
     <div class="kotak_login">
       <p class="judul">Silahkan login</p>
-      <form>
+      <form name="formlogin">
         <label>Username</label>
         <input type="text" name="username" class="form" placeholder="username atau email">
         <label>Password</label>
-        <input type="password" name="form-password" class="form" placeholder="password"><br>
+        <input type="password" name="password" class="form-password" placeholder="password"><br>
         <input type="checkbox" class="form-checkbox">Lihat Password
       </form>
       <a href="password.html" class="lupa">Lupa Password?</a>
       <center>
-        <a href="index.html" class="link">MASUK</a>
+        <a href="index.html" class="link" onclick="return formvalidasi()">MASUK</a>
       </center>
     </div>
   </div>
@@ -64,5 +64,20 @@
       }
     });
   });
+</script>
+<script type="text/javascript">
+	function formvalidasi(){
+		if (document.formlogin.username.value == "" ) {
+			alert("username tidak boleh kosong");
+			document.formlogin.username.focus();
+			return false;
+		}
+		if (document.formlogin.password.value == "" ) {
+			alert("password tidak boleh kosong");
+			document.formlogin.password.focus();
+			return false;
+		}
+		return alert("login berhasil!!!")
+	}
 </script>
 </html>
